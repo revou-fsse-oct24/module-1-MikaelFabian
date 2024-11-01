@@ -1,17 +1,8 @@
-.logo {
-    font-size: 32px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color: orange;
-    text-decoration: none;
-    font-weight: 900px;
-}   
-header {
-    margin: auto;
-    background-color: gray;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 1em 0;
-} 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     color: black;
     font-family: Arial, sans-serif;
@@ -19,6 +10,45 @@ body {
     padding: 0;
     background-color: gray;
 }
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* logo dan title */
+.logo-title {
+    display: flex;
+    align-items: center;
+    width: auto;
+    max-width: 600px;
+}
+.logo {
+    width: 60px;
+    height: auto;
+}   
+.title{
+    color: ivory;
+    margin-left: 2px;
+    font-weight: bold;
+    font-size: smaller;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+    border: black solid 6px;
+    border-radius: 15px;
+    background-color: black;
+
+}
+
+/* Header tyle*/
+header {
+    margin: auto;
+    background-color: gray;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1em 0;
+} 
 h2 {
     border: 5px solid black;
     flex: content;
@@ -88,12 +118,14 @@ h2 {
     text-align: center;
     padding: 15px;
 }
-.product-img {
+.product img {
     width: 100%;
     height: auto;
+    padding-bottom: 4px;
 }
-* {
-    box-sizing: border-box;
+p {
+    margin: 10px;
+    align-content: center;
 }
 #registration {
     background-color: #ffffff;
