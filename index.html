@@ -3,218 +3,110 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="device-width", initial-scale="1.0">
-        <style> 
-        body {
-            color: black;
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: gray;
-        }
-        .logo {
-            font-size: 32px;
-            color: orange;
-            text-decoration: none;
-            font-weight: 700;
-        }    
-        header {
-            margin: auto;
-            background-color: rgba(40, 40, 40, 0.877);
-            color: white;
-            text-align: center;
-            padding: 1em 0;
-        }
-        .topnav {
-            color: black;
-            width: 100%;
-            background-color: #555;
-            overflow: hidden;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            z-index: 0;
-        }
-        .topnav a {
-            float: inherit;
-            position: relative;
-            font-size: 20px;
-            color: aliceblue;
-            font-weight: 500;
-            text-align: center;
-            text-decoration: none;
-        }
-        .topnav a::before {
-            content: "";
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: #fff;
-            transition: 0.3s;
-        }
-        .topnav a:hover::before {
-            width: 100%;
-        }       
-        .topnav a.active {
-            background-color: #2f9e8f;
-            color: white;
-        }
-        .topnav input[type=text] {
-            float: right;
-            padding: 6px;
-            border: none;
-            margin-top: 5px;
-            margin-right: 40px;
-            font-size: 17px;
-        }
-        .product-gallery {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 15px;
-            padding: 20px;
-        }
-        .product {
-            background-color: white;
-            border-radius: 5px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            text-align: center;
-            padding: 15px;
-        }
-        .product img {
-            width: 100%;
-            height: auto;
-        }
-        * {
-            box-sizing: border-box;
-        }
-        #registration {
-            background-color: #ffffff;
-            padding: 10px;
-            border-radius: 2px;
-            margin: 10px auto;
-            width: 50%;
-            max-width: 600px;
-        }
-        form {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: gray;
-            color: black;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }</style>
+        <link rel="stylesheet" href="style.css" /> 
         <title>Module 1 FSSE</title>
     </head>
     
     <body>
         <header>
             <a href="#" class="logo"><h1> Smellsgud</h1></a><br/>
-            <topnav class="topnav">
+            <nav class="nav">
                 <a class="active" href="#">Home</a>
                 <a href="#">HMNS</a>
                 <a href="#">MYKONOS</a>
                 <a href="#">ONIX</a> 
                 <input type="text" placeholder="Search.." class="search">
-            </topnav>
+            </nav>
         </header>
-        <body>
-            <a href="#"><h1> HMNS </h1></a>
+            <a href="#"><h2> HMNS </h2></a>
             <section class="product-gallery">
                 <div class="product">
                     <img src="img\alpha.jpg" alt="HMNS ALPHA">
-                    <h2> HMNS ALPHA (100ml) </h2>
+                    <h3> HMNS ALPHA (100ml) </h3>
                     <p><b> TOP NOTES : </b> Citrus, Grass </p> 
                     <p><b> MIDDLE NOTES : </b> Cedarwood </p>
                     <p><b> BASE NOTES : </b> Green Tea Essence </p>
                 </div>
                  <div class="product">
                         <img src="img\farhampton.webp" alt="HMNS FARHAMPTON">
-                        <h2> HMNS FARHAMPTON (100ml) </h2>
+                        <h3> HMNS FARHAMPTON (100ml) </h3>
                         <p><b> TOP NOTES : </b> Bergamot, Ripe Fruit </p> 
                         <p><b> MIDDLE NOTES : </b> Lavender, Orange Blossom Flower </p>
                         <p><b> BASE NOTES : </b> Labdanum, Cedarwood, Tonka Bean </p>
                 </div>
                 <div class="product">
                    <img src="img\The Prestige.webp" alt="HMNS The Prestige">
-                   <h2> HMNS The Prestige (100ml) </h2>
+                   <h3> HMNS The Prestige (100ml) </h3>
                    <p><b> TOP NOTES : </b> Grapefruit, Tobacco Leaves, Pink Pepper Jungle Essence </p> 
                    <p><b> MIDDLE NOTES : </b> Patchouli, Geranium, Orris </p>
                    <p><b> BASE NOTES : </b> Tolu, Vetiver, Labdanum </p>
                 </div>
                 <div class="product">
                     <img src="img\The Perfection.webp" alt="HMNS The Perfection">
-                    <h2> HMNS The Perfection (100ml) </h2>
+                    <h3> HMNS The Perfection (100ml) </h3>
                     <p><b> TOP NOTES : </b> Bergamot, Elemi, Clove, Nutmed </p> 
                     <p><b> MIDDLE NOTES : </b> Lavender, Tagetes, Lily of The Valley, Green Pear </p>
                     <p><b> BASE NOTES : </b> Driftwood, Sandalwood, Leather, White Musk </p>
                  </div>
                  <div class="product">
                     <img src="img\orgsm.webp" alt="HMNS ORGSM">
-                    <h2> HMNS ORGSM (100ml) </h2>
+                    <h3> HMNS ORGSM (100ml) </h3>
                     <p><b> TOP NOTES : </b> Red Apple </p> 
                     <p><b> MIDDLE NOTES : </b> Rose, Jasmine, Peony </p>
                     <p><b> BASE NOTES : </b> Vanilla Beans, Amber </p>
                  </div>
             </section>
             <br/> &nbsp;&nbsp;
-            <a href="#"><h1> MYKONOS </h1></a>
+            <a href="#"><h2> MYKONOS </h2></a>
             <section class="product-gallery">
                 <div class="product">
                     <img src="./img/mykonos matcha latte.jpg" alt="MYKONOS Matcha Latte">
-                    <h2> MYKONOS Matcha Latte </h2>
+                    <h3> MYKONOS Matcha Latte </h3>
                     <p><b>MAIN NOTES : </b> Matcha, White Chocolate, Jasmine, Tonka Bean, Vanilla & Milk Powder </p>
                     <p><b> Personality Traits: </b> Calm, Creamy, learned, intelligent, soft spoken. </p>
                 </div>
                 <div class="product">
                     <img src="./img/mykonos senja.jpg" alt="MYKONOS Senja">
-                    <h2> MYKONOS Senja </h2>
+                    <h3> MYKONOS Senja </h3>
                     <p><b>TOP NOTES : </b> Coffee, Almond </p>
                     <p><b> MIDDLE NOTES : </b> Patchouli, Chocolate, Milk </p>
                     <p><b> BASE NOTES : </b> Sandalwood, Chocolate, Vetiver, Cistus </p>
                 </div>
                 <div class="product">
                     <img src="./img/mykonos velve.jpg" alt="MYKONOS Verve">
-                    <h2> MYKONOS Verve </h2>
+                    <h3> MYKONOS Verve </h3>
                     <p><b>TOP NOTES : </b> Vanilla, Pear, Blackcurrant </p>
                     <p><b> MIDDLE NOTES : </b> Jasmine, Iris, Orange Blossom </p>
                     <p><b> BASE NOTES : </b> Praline, Vanilla, Tonka Bean </p>
                 </div>
             </section>
             <br/> &nbsp;&nbsp;
-            <a href="#"><h1> ONIX FRAGRANCE </h1></a>
+            <a href="#"><h2> ONIX FRAGRANCE </h2></a>
             <section class="product-gallery">
                 <div class="product">
                     <img src="./img/onix fwb.jpg" alt=" ONIX FWB ">
-                    <h2> ONIX FWB </h2>
+                    <h3> ONIX FWB </h3>
                     <p><b> TOP NOTES : </b> Bergamot, Lemon, Orange, Apple, Greentea </p>
                     <p><b> MIDDLE NOTES :</b> Freesia, White Floral, Amber, Peach, Coconut </p>
                     <p><b> BASE NOTES : </b> Amber, Vetiver, Musk, Vanilla, Cedarwood, Caramel </p>
                 </div>
                 <div class="product">
                     <img src="./img/onix Jack.webp" alt=" ONIX JACK ">
-                    <h2> ONIX Jack </h2>
+                    <h3> ONIX Jack </h3>
                     <p><b> TOP NOTES : </b> Pink Pepper, cardamom, Saffron, Coriander, Raspberry </p>
                     <p><b> MIDDLE NOTES :</b> Jasmine Sambac, Orange Flower, Orris, Suede, Violet, Leather </p>
                     <p><b> BASE NOTES : </b> Amber, Moss, Patchouli, Vanilla, Cedar, Musk </p>
                 </div>
                 <div class="product">
                     <img src="./img/onix senoparty.webp" alt=" ONIX Senoparty ">
-                    <h2> ONIX Senoparty </h2>
+                    <h3> ONIX Senoparty </h3>
                     <p><b> TOP NOTES : </b> Saffron, Fir, Bergamot, Nagarmotha </p>
                     <p><b> MIDDLE NOTES :</b> Oud, White Floral, Tageta </p>
                     <p><b> BASE NOTES : </b> Amber, Musk, Caramel Cedar, Moss </p>
                 </div>
             </section>
         <section id="registration">
-            <h2>Register to Shop Online</h2>
+            <p><b>Register to Shop Online</b></p>
                 <form>
                     <label for="name">Full Name :</label>
                     <input type="text" id="name" name="Name" placeholder="mii sedapp" required>
@@ -227,11 +119,17 @@
             
                     <label for="address">Address :</label>
                     <textarea id="address" name="address" placeholder="Your Address" rows="3" required></textarea>
-            
-                    <input type="submit" value="Register">
+
+                    <p>Gender :</p>
+                    <label for="gender">male</label>
+                    <input type="radio" id="laki-laki" name="Gender" value="gender">
+                    <label for="gender">female</label>
+                    <input type="radio" id="laki-laki" name="Gender" value="gender">
+                    <input type="submit" value="submit">
+                </br>
+
                     </form>
         </section>      
-        </body>
     </body>
     <footer>
     </footer>
