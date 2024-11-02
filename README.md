@@ -2,7 +2,7 @@
 ###
 simple html page using HTML5 project
 # SMELLSGUD
-[![Results](https://api.netlify.com/api/v1/badges/0f49de92-6db0-447a-98e8-19634aeaa416/deploy-status)](https://app.netlify.com/sites/smellsgud/deploys)
+[Smellsgud](https://smellsgud.netlify.app/)
 ## About Us
 Smellsgud adalah project website e-commerce yang menyediakan berbagai brand parfum lokal 
 ### Feature
