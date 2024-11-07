@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="device-width", initial-scale="1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="style.css" /> 
         <title>Module 1 FSSE</title>
     </head>
@@ -14,12 +15,14 @@
                 <a href="index.html" class="title">
                     <h1> Smellsgud</h1>
                 </a>
-                <nav class="nav">
+                <nav class="nav" id="navbar">
                     <a class="active" href="index.html">Home</a>
                     <a href="#">Catalog</a>
                     <a href="#">Promo</a>
                     <a href="#">Login</a> 
                     <input type="text" placeholder="Search.." class="search">
+                    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                        <i class="fa fa-bars"></i>
                 </nav>
             </div>
         </div>
@@ -114,29 +117,45 @@
     </body>
     <footer>
         <section id="registration">
-            <p><b>Register to Shop Online</b></p>
+            <p id="registration-p"><b>Register to Shop Online</b></p>
                 <form>
-                    <label for="name">Full Name :</label>
-                    <input type="text" id="name" name="Name" placeholder="mii sedapp" required>
-            
-                    <label for="email">Email :</label>
-                    <input type="email" id="email" name="Email" placeholder="Your Email" required>
-            
-                    <label for="password">Password :</label>
-                    <input type="password" id="password" name="Passsword" placeholder="Create a Password" required>
-            
-                    <label for="address">Address :</label>
-                    <textarea id="address" name="address" placeholder="Your Address" rows="3" required></textarea>
+                    <div class="form-2" >
+                        <div>
+                            <label for="name">First Name :</label>
+                            <input type="text" id="First-name" name="First-Name" placeholder="mii" required>
+                        </div>
+                        <div>
+                            <label for="name">Last Name :</label>
+                            <input type="text" id="Last-name" name="Last-Name" placeholder="sedapp" required>
+                        </div>
+                    </div>
 
-                    <p>Gender :</p>
-                    <label for="gender">male</label>
-                    <input type="radio" id="laki-laki" name="Gender" value="gender">
-                    <label for="gender">female</label>
-                    <input type="radio" id="laki-laki" name="Gender" value="gender">
-                    <input type="submit" value="submit">
-                </br>
+                    <div class="form-2">
+                        <div><label for="email">Email :</label>
+                            <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                        </div>
+                        <div><label for="password">Password :</label>
+                            <input type="password" id="password" name="Passsword" placeholder="Create a Password" required>
+                        </div>
+                    </div>
+            
+                    <div class="form-1">
+                        <label for="address">Address :</label>
+                        <textarea id="address" name="address" placeholder="Your Address" rows="3" required></textarea>
+                    </div>
 
-                    </form>
+                    <div class="form-radio">
+                        <label for="Gender">Your Gender :</label>
+                        <ul>
+                            <li><input type="radio" name="Male"> Male </li>
+                            <li><input type="radio" name="Female"> Female </li>
+                        </ul>
+                    </div>
+
+                    <div id="submit-button">
+                        <input class="Register" type="submit" value="SUBMIT">
+                    </div>
+                </form>
         </section> 
     </footer>
 </html>
