@@ -1,17 +1,19 @@
-* {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+.gabarito-body {
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
 body {
     color: black;
-    font-family: Arial, sans-serif;
+    font-family: "Gabarito", sans-serif;
     margin: 0;
     padding: 0;
     background-color: black;
 }
 .container {
+    display: flex;
+    flex-direction: column;
     padding-top: 10px;
     width: 100%;
     max-width: 100%;
@@ -70,11 +72,11 @@ h2 {
     align-items: center;
 }
 .nav a {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Gabarito", sans-serif;
     font-size: 20px;
     color: whitesmoke;
     background-color: black;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     text-decoration: none;
     border: 2px solid black;
@@ -91,11 +93,11 @@ h2 {
     width: 100%;
 }       
 .nav a.active {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Gabarito", sans-serif;
     font-size: 20px;
     color: black;
     background-color: white;
-    font-weight: 500;
+    font-weight: 400;
     text-align: center;
     text-decoration: none;
     border: 2px solid black;
@@ -107,11 +109,45 @@ h2 {
     margin-right: 40px;
     font-size: 17px;
 }
-.topnav .icon {
+.nav .icon {
     display: none;
   }
 /* end of header style */
 
+/* hero image */
+.hero-image {
+    text-align: center;
+    color: white;
+    background-color: #222222;
+    width: 100%;
+    max-width: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("./assets/bgmonochrome.jpeg");
+    background-position: top center;
+    background-size: cover;
+  }
+.hero-text {
+    font-weight: 400;
+    margin: 16px;
+    animation-duration: 2s;
+    animation-name: slidein;
+    text-shadow: 2px 2px 6px #222222;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
 
 .product-gallery {
     display: grid;
@@ -120,7 +156,7 @@ h2 {
     padding: 20px;
 }
 .product {
-    background-color: ivory;
+    background-color: rgba(255, 255, 240, 0.785);
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -140,7 +176,7 @@ p {
 
 /* form style */
 #registration {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 240, 0.785);
     padding: 20px;
     border-radius: 2px;
     margin: auto;
@@ -155,7 +191,7 @@ form {
     display: flex;
     flex-direction: column;
     align-content: center;
-    padding-left: 100px;
+    padding-left: 50px;
     gap: 4px;
     max-width: 600px;
 }
@@ -195,7 +231,7 @@ form {
 .form-1 input {
     height: 3rem;
     padding: 0 1rem;
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 0.5rem;
 }
 .form-radio {
@@ -263,8 +299,8 @@ footer {
     }
 
     .nav a.icon {
-      float: right;
-      display: block;
+        float: right;
+        display: block;
     }
 
     .nav.responsive {
@@ -307,28 +343,45 @@ footer {
 
     /* product media */
     .product-gallery {
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        padding: 10px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 8px;
+            grid-auto-rows: 240px 240px 240px;
     }
     .product {
         background-color: ivory;
         border-radius: 5px;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
+        overflow: scroll;
         text-align: center;
         padding: 15px;
     }
+    #hmns-5 {
+        grid-column-start: 3;
+        grid-column-end: 1;
+    }
+    #mykonos-3 {
+        grid-column-start: 3;
+        grid-column-end: 1;
+    }
+    #onix-3 {
+        grid-column-start: 3;
+        grid-column-end: 1;
+    }
     .product img {
-        width: 100%;
+        width: 70%;
         height: auto;
+        overflow: scroll;
         padding-bottom: 4px;
+        object-fit: cover;
     }
     p {
         margin: 10px;
         align-content: center;
     }
     
-
+    .form-radio {
+        padding-top: 5px;
+    }
+    
 }
